@@ -13,6 +13,34 @@ Verification Mechanism: The platform supports admin-based approval of project pr
 - **Decentralization**: The platform operates on a decentralized blockchain, ensuring transparency and security for all participants.
 
 ### Project Structure
+```
+.
+├── backend
+│   ├── database.py
+│   ├── main.py
+│   ├── pinata.py
+│   ├── requirements.txt
+│   ├── server.py
+│   └── test2.py
+├── cache
+│   └── solidity-files-cache.json
+├── contracts
+│   ├── Nasaafunding.sol
+│   ├── NasaafundNFT.sol
+│   └── NasaafundPlatform.sol
+├── hardhat.config.ts
+├── ignition
+│   └── modules
+│       └── Lock.ts
+├── LICENSE
+├── package.json
+├── package-lock.json
+├── README.md
+├── test
+│   └── NasaafundNFT.test.ts
+└── tsconfig.json
+
+```
 
 **Smart Contracts**: Developed using Solidity and Hardhat, covering NFT minting, crowdfunding mechanics, and proposal verification.
 Frontend: A React.js application allowing users to interact with the platform, connect their Web3 wallet, and manage their contributions.
