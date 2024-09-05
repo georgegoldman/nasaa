@@ -26,11 +26,13 @@ contract NasaafundNFT is ERC721, Ownable(msg.sender) {
     }
 
     function _setTokenURI(uint256 tokenId, string memory tokenURI) internal virtual {
+        require(_exists(tokenId), "ERC721Metadata: URI set of nonexistent token");
         _tokenURIs[tokenId] = tokenURI;
     }
 
     function tokenURI(uint256 tokenId) public view virtual override returns (string memory) {
         require(_exists(tokenId));
+        return _tokenURIs[tokenId];
     }
 
     function _exists(uint256 tokenId) internal view returns(bool) {

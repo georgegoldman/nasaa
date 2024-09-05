@@ -1,5 +1,7 @@
 import { HardhatUserConfig } from "hardhat/config";
 import "@nomicfoundation/hardhat-toolbox";
+import "@nomiclabs/hardhat-web3";
+import "@nomicfoundation/hardhat-chai-matchers"
 
 require('dotenv').config();
 
